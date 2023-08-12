@@ -1,0 +1,7 @@
+.admin{
+    width: 141px;
+    height: 141px;
+    object-fit: cover;
+}
+// 問題
+// 圖片上下的空白，因為這個空白，所以我的文字跟圖片無法對齊，我在modal-body設定m-0 p-0也沒有移除，有在base設定img     vertical-align: middle;

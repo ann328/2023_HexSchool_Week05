@@ -1,0 +1,30 @@
+.collapsed .open{
+    display: block;
+  }
+  .open{
+    display: none;
+  }
+  .collapsed .close{
+  display: none;
+  }
+  .close{
+    display: block;
+  }
+  .bdrs-2{
+    border-radius: 2px;
+  }
+  .user{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+  .n-resize{
+    resize: none;
+    outline: none;
+    &::placeholder{
+      color: $gray-400;
+    }
+    &:focus::placeholder{
+      color: transparent;
+    }
+  }

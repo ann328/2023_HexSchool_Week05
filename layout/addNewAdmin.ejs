@@ -1,0 +1,86 @@
+<div class="modal fade" tabindex="-1" id="Newadmin" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable ">
+      <div class="modal-content rounded-0 text-dark">
+        <div class="modal-header border-0 p-6">
+          <p class="fw-bold fs-4">New Admin</p>
+          <button type="button" class="btn-close bdrs-2" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body py-0 px-6 ">
+          <form action="admin.html" method="post">
+            <p class="fw-bold mb-3">Account</p>
+            <div class="pb-4">
+              <label for="name" class="form-label fs-7">Name</label>
+              <input type="text" class="form-control form-control-lg bdrs-2" id="name">
+            </div>
+            <div>
+              <label for="email" class="form-label fs-7">Email</label>
+              <input type="email" class="form-control form-control-lg bdrs-2" id="email">
+            </div>
+            <hr class="text-dark-subtle my-4">
+            <p class="text-dark fs-5 mb-8 fw-bold">Verification</p>
+            <p class="text-dark fw-bold mb-8 d-flex align-items-center">
+              <span class="material-symbols-outlined text-danger me-2">
+                warning
+              </span>
+              Unverified
+            </p>
+            <a type="button"
+              class="btn btn-body border-dark-subtle text-success fw-bold w-100 bdrs-2 py-3">Send Verification
+              Mail</a>
+            <hr class="text-dark-subtle my-4">
+            <p class="text-dark fw-bold mb-3 fs-5">Access Level</p>
+            <div>
+              <select id="accessLevel" class="form-select form-select-lg bdrs-2">
+                <option>-Choose access level-</option>
+              </select>
+            </div>
+            <hr class="text-dark-subtle my-4">
+            <p class="text-dark fs-5 mb-8 fw-bold">Custom Access</p>
+            <div class="mb-3">
+              <div class="form-check">
+                <input class="form-check-input rounded-0 border-dark" type="checkbox" id="Lecture">
+                <label class="form-check-label text-dark ms-1" for="Lecture">
+                  Lecture
+                </label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="form-check">
+                <input class="form-check-input rounded-0 border-dark" type="checkbox" id="Coupon">
+                <label class="form-check-label text-dark ms-1" for="Coupon">
+                  Coupon
+                </label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="form-check">
+                <input class="form-check-input rounded-0 border-dark" type="checkbox" id="Message">
+                <label class="form-check-label text-dark ms-1" for="Message">
+                  Message
+                </label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="form-check">
+                <input class="form-check-input rounded-0 border-dark" type="checkbox" id="Setting">
+                <label class="form-check-label text-dark ms-1" for="Setting">
+                  Setting
+                </label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="form-check">
+                <input class="form-check-input rounded-0 border-dark" type="checkbox" id="Task Menu">
+                <label class="form-check-label text-dark ms-1" for="Task Menu">
+                  Task Menu
+                </label>
+              </div>
+            </div>
+            <div class="modal-footer border-0">
+              <button type="button" class="btn btn-outline-success bdrs-2 py-2 px-6 fw-bold close"
+                data-bs-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-success bdrs-2 py-2 px-6 fw-bold">Add</button>
+            </div>
+          </form>
+        </div>
