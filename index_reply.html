@@ -8,76 +8,54 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
   <title>ANSWER</title>
-  <script type="module" crossorigin src="/2023_HexSchool_Week05/assets/main-cca19792.js"></script>
-  <link rel="stylesheet" href="/2023_HexSchool_Week05/assets/main-33e8c990.css">
+  <script type="module" crossorigin src="/2023_HexSchool_Week05/assets/main-3648974f.js"></script>
+  <link rel="stylesheet" href="/2023_HexSchool_Week05/assets/main-7d2e6422.css">
 </head>
 
 <body>
-  <div class="d-flex">
-    <div class="bg-light mh-100 py-6 d-flex flex-column justify-content-between">
+
+  <div class="sidebar bg-light mh-100 py-6 d-flex flex-column justify-content-between">
   <!-- 問題 -->
   <ul class="nav flex-column fw-bold">
     <li class="nav-item mb-6">
-      <a class="nav-link nav-link-active p-0 ps-6" aria-current="page" href="#">
+      <a class="nav-link p-0 ps-6" aria-current="page" href="index.html">
         <img src="/2023_HexSchool_Week05/assets/logo-ANSWER-5336fb45.svg" alt="logo" />
       </a>
     </li>
     <li class="nav-item">
-      <a
-        class="nav-link nav-link-active d-flex align-items-center"
-        aria-current="page"
-        href="#"
-      >
+      <a class="nav-link d-flex align-items-center" aria-current="page" href="#">
         <span class="material-symbols-outlined me-3"> insert_chart </span>
         Dashboard
       </a>
     </li>
     <li class="nav-item">
-      <a
-        class="nav-link nav-link-active d-flex align-items-center"
-        aria-current="page"
-        href="#"
-      >
+      <a class="nav-link d-flex align-items-center" aria-current="page" href="#">
         <span class="material-symbols-outlined me-3"> forum </span>
         Question
       </a>
     </li>
     <li class="nav-item">
-      <a
-        class="nav-link nav-link-active d-flex align-items-center"
-        aria-current="page"
-        href="index.html"
-      >
+      <a class="nav-link d-flex align-items-center text-success active"
+        aria-current="page" href="index.html">
         <span class="material-symbols-outlined me-3"> assignment </span>
         Assignment
       </a>
     </li>
     <li class="nav-item">
-      <a
-        class="nav-link nav-link-active d-flex align-items-center"
-        aria-current="page"
-        href="#"
-      >
+      <a class="nav-link d-flex align-items-center" aria-current="page" href="#">
         <span class="material-symbols-outlined me-3"> video_library </span>
         Course
       </a>
     </li>
     <li class="nav-item">
-      <a
-        class="nav-link nav-link-active d-flex align-items-center"
-        aria-current="page"
-        href="admin.html"
-      >
+      <a class="nav-link d-flex align-items-center text-gray-900"
+        aria-current="page" href="admin.html">
         <span class="material-symbols-outlined me-3"> group </span>
         Admin
       </a>
     </li>
     <li class="nav-item">
-      <a
-        class="nav-link nav-link-active d-flex align-items-center"
-        aria-current="page"
-        href="#"
-      >
+      <a class="nav-link d-flex align-items-center" aria-current="page" href="#">
         <span class="material-symbols-outlined me-3"> settings </span>
         Settings
       </a>
@@ -86,19 +64,15 @@
   <!-- 問題 -->
   <div class="d-flex ms-6 align-items-center">
     <div class="flex-shrink-0">
-      <img
-        src="/2023_HexSchool_Week05/assets/andychen-f14fef59.jpeg"
-        alt="andychen"
-        class="user rounded-circle"
-      />
+      <img src="/2023_HexSchool_Week05/assets/andychen-f14fef59.jpeg" alt="andychen" class="user rounded-circle" />
     </div>
     <div class="flex-grow-1 ms-2">
       <p class="fw-bold mb-1">Andy Chen</p>
-      <a href="#" class="text-secondary pe-80">andy0401@mail.com</a>
+      <a href="#" class="text-secondary">andy0401@mail.com</a>
     </div>
   </div>
-</div>
-      <div class="container py-6 px-6">
+</div>    <div class="main ms-200 px-4">
+      <div class="container py-6">
         <header class="d-flex justify-content-between pb-6">
           <div class="d-flex align-items-center">
             <h1 class="me-50 fw-bold text-dark">Assignment</h1>
@@ -178,7 +152,7 @@
   </div>            <div class="text-secondary fs-7">2 comments</div>
         </div>
         <div class="row">
-          <div class="col-4">
+          <div class="col-md-4">
             <div class="list-group bdrs-2" id="list-tab" role="tablist">
               <a class="list-group-item list-group-item-action active p-7" id="list-home-list" data-bs-toggle="list"
                 href="#list-home" role="tab" aria-controls="list-home">
@@ -229,7 +203,7 @@
               </a>
             </div>
           </div>
-          <div class="col-8">
+          <div class="col-md-8">
             <div class="tab-content" id="nav-tabContent">
               <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
                 <div class="card bdrs-2 mb-3">
@@ -290,7 +264,6 @@
                       <hr class="text-dark-subtle ms-5 mb-7" />
                     </div>
                   </div>
-                  <!--  -->
                   <div class="card-header bg-light border-top border-dark-subtle py-3 ps-25 d-flex">
                     <a href="#" class="text-dark fw-bold d-flex align-items-center">Body Text
                       <span class="material-symbols-outlined ms-2">
@@ -334,13 +307,12 @@
                     </a>
                   </div>
                   <div class="card-body">
-                    <textarea cols="80" rows="10" placeholder="Reply an answer…" class="border-0 n-resize" ></textarea>
+                    <textarea cols="80" rows="10" placeholder="Reply an answer…" class="border-0 n-resize"></textarea>
                     <div class="d-flex align-items-center justify-content-end">
                       <a href="index.html" class="btn btn-outline-success bdrs-2 me-3 py-2 px-6 fw-bold">Cancel</a>
                       <a href="#" class="btn btn-success bdrs-2 py-2 px-6 fw-bold">Reply</a>
                     </div>
                   </div>
-                </div>
                 </div>
               </div>
               <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
@@ -356,8 +328,9 @@
           </div>
         </div>
       </div>
-  </div>
-  
+    </div>
+
+    
 </body>
 
 </html>
