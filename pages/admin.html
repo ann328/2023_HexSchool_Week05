@@ -11,9 +11,9 @@
 </head>
 
 <body>
-  <div class="d-flex">
-    <%- include('./layout/sidebar'); -%>
-      <div class="container py-6 px-6">
+  <%- include('./layout/sidebar', {page:"admain"}); -%>
+    <div class="main ms-200 px-4">
+      <div class="container py-6 ">
         <header class="d-flex justify-content-between pb-6">
           <div class="d-flex align-items-center">
             <h1 class="me-5 fw-bold text-dark">Admin</h1>
@@ -50,22 +50,26 @@
             </tr>
           </thead>
           <tbody>
-            <tr data-bs-target="#emirWicks" data-bs-toggle="modal" >
+            <tr data-bs-target="#emirWicks" data-bs-toggle="modal">
               <th scope="row" class="py-3">#1</th>
               <td class="py-3">Emir Wicks</td>
               <td class="py-3">emir.wicks@mail.com</td>
-              <td class="py-3">Yes</td>
-              <td class="d-flex py-3">
-                <a href="#emirWicks" class="pe-4 d-flex align-items-center" data-bs-toggle="modal">
-                  <span class="material-symbols-outlined text-dark">
-                    visibility
-                  </span>
-                </a>
-                <a href="#edit" data-bs-toggle="modal" class="d-flex align-items-center" data-bs-whatever="Emir Wicks">
-                  <span class="material-symbols-outlined text-dark">
-                    edit
-                  </span>
-                </a>
+              <td class="py-3">Yes
+              </td>
+              <td class="py-3">
+                <div class="d-flex justify-content-end align-items-center">
+                  <a href="#emirWicks" class="pe-4 d-flex align-items-center" data-bs-toggle="modal">
+                    <span class="material-symbols-outlined text-dark">
+                      visibility
+                    </span>
+                  </a>
+                  <a href="#edit" data-bs-toggle="modal" class="d-flex align-items-center"
+                    data-bs-whatever="Emir Wicks">
+                    <span class="material-symbols-outlined text-dark">
+                      edit
+                    </span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr>
@@ -73,17 +77,19 @@
               <td class="py-3">Zaina Goldsmith</td>
               <td class="py-3">zaina.goldsmith@mail.com</td>
               <td class="py-3">Yes</td>
-              <td class="d-flex align-items-center py-3">
-                <a href="#" class="pe-4 d-flex align-items-center">
-                  <span class="material-symbols-outlined text-dark">
-                    visibility
-                  </span>
-                </a>
-                <a href="#" class="d-flex align-items-center">
-                  <span class="material-symbols-outlined text-dark">
-                    edit
-                  </span>
-                </a>
+              <td class="py-3">
+                <div class="d-flex justify-content-end align-items-center">
+                  <a href="#" class="pe-4 d-flex align-items-center" data-bs-toggle="modal">
+                    <span class="material-symbols-outlined text-dark">
+                      visibility
+                    </span>
+                  </a>
+                  <a href="#" data-bs-toggle="modal" class="d-flex align-items-center" data-bs-whatever="Emir Wicks">
+                    <span class="material-symbols-outlined text-dark">
+                      edit
+                    </span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr>
@@ -91,17 +97,19 @@
               <td class="py-3">Mahima Lopez</td>
               <td class="py-3">mahima.lopez@mail.com</td>
               <td class="py-3">Yes</td>
-              <td class="d-flex align-items-center py-3">
-                <a href="#" class="pe-4 d-flex align-items-center">
-                  <span class="material-symbols-outlined text-dark">
-                    visibility
-                  </span>
-                </a>
-                <a href="#" class="d-flex align-items-center">
-                  <span class="material-symbols-outlined text-dark">
-                    edit
-                  </span>
-                </a>
+              <td class="py-3">
+                <div class="d-flex justify-content-end align-items-center">
+                  <a href="#" class="pe-4 d-flex align-items-center" data-bs-toggle="modal">
+                    <span class="material-symbols-outlined text-dark">
+                      visibility
+                    </span>
+                  </a>
+                  <a href="#" data-bs-toggle="modal" class="d-flex align-items-center" data-bs-whatever="Emir Wicks">
+                    <span class="material-symbols-outlined text-dark">
+                      edit
+                    </span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr>
@@ -109,17 +117,19 @@
               <td class="py-3">Pharrell Murray</td>
               <td class="py-3">pharrell.murray@mail.com</td>
               <td class="py-3">Yes</td>
-              <td class="d-flex align-items-center py-3">
-                <a href="#" class="pe-4 d-flex align-items-center">
-                  <span class="material-symbols-outlined text-dark">
-                    visibility
-                  </span>
-                </a>
-                <a href="#" class="d-flex align-items-center">
-                  <span class="material-symbols-outlined text-dark">
-                    edit
-                  </span>
-                </a>
+              <td class="py-3">
+                <div class="d-flex justify-content-end align-items-center">
+                  <a href="#" class="pe-4 d-flex align-items-center" data-bs-toggle="modal">
+                    <span class="material-symbols-outlined text-dark">
+                      visibility
+                    </span>
+                  </a>
+                  <a href="#" data-bs-toggle="modal" class="d-flex align-items-center" data-bs-whatever="Emir Wicks">
+                    <span class="material-symbols-outlined text-dark">
+                      edit
+                    </span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr>
@@ -127,17 +137,19 @@
               <td class="py-3">Annika Mcbride</td>
               <td class="py-3">annika.mcbride@mail.com</td>
               <td class="py-3">Yes</td>
-              <td class="d-flex align-items-center py-3">
-                <a href="#" class="pe-4 d-flex align-items-center">
-                  <span class="material-symbols-outlined text-dark">
-                    visibility
-                  </span>
-                </a>
-                <a href="#" class="d-flex align-items-center">
-                  <span class="material-symbols-outlined text-dark">
-                    edit
-                  </span>
-                </a>
+              <td class="py-3">
+                <div class="d-flex justify-content-end align-items-center">
+                  <a href="#" class="pe-4 d-flex align-items-center" data-bs-toggle="modal">
+                    <span class="material-symbols-outlined text-dark">
+                      visibility
+                    </span>
+                  </a>
+                  <a href="#" data-bs-toggle="modal" class="d-flex align-items-center" data-bs-whatever="Emir Wicks">
+                    <span class="material-symbols-outlined text-dark">
+                      edit
+                    </span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr>
@@ -145,17 +157,19 @@
               <td class="py-3">Fatimah Clark</td>
               <td class="py-3">fatimah.clark@mail.com</td>
               <td class="py-3">Yes</td>
-              <td class="d-flex align-items-center py-3">
-                <a href="#" class="pe-4 d-flex align-items-center">
-                  <span class="material-symbols-outlined text-dark">
-                    visibility
-                  </span>
-                </a>
-                <a href="#" class="d-flex align-items-center">
-                  <span class="material-symbols-outlined text-dark">
-                    edit
-                  </span>
-                </a>
+              <td class="py-3">
+                <div class="d-flex justify-content-end align-items-center">
+                  <a href="#" class="pe-4 d-flex align-items-center" data-bs-toggle="modal">
+                    <span class="material-symbols-outlined text-dark">
+                      visibility
+                    </span>
+                  </a>
+                  <a href="#" data-bs-toggle="modal" class="d-flex align-items-center" data-bs-whatever="Emir Wicks">
+                    <span class="material-symbols-outlined text-dark">
+                      edit
+                    </span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr>
@@ -163,17 +177,19 @@
               <td class="py-3">Klaudia Rhodes</td>
               <td class="py-3">klaudia.rhodes@mail.com</td>
               <td class="py-3">Yes</td>
-              <td class="d-flex align-items-center py-3">
-                <a href="#" class="pe-4 d-flex align-items-center">
-                  <span class="material-symbols-outlined text-dark">
-                    visibility
-                  </span>
-                </a>
-                <a href="#" class="d-flex align-items-center">
-                  <span class="material-symbols-outlined text-dark">
-                    edit
-                  </span>
-                </a>
+              <td class="py-3">
+                <div class="d-flex justify-content-end align-items-center">
+                  <a href="#" class="pe-4 d-flex align-items-center" data-bs-toggle="modal">
+                    <span class="material-symbols-outlined text-dark">
+                      visibility
+                    </span>
+                  </a>
+                  <a href="#" data-bs-toggle="modal" class="d-flex align-items-center" data-bs-whatever="Emir Wicks">
+                    <span class="material-symbols-outlined text-dark">
+                      edit
+                    </span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr>
@@ -181,17 +197,19 @@
               <td class="py-3">Tillie Lucero</td>
               <td class="py-3">tillie.lucero@mail.com</td>
               <td class="py-3">Yes</td>
-              <td class="d-flex align-items-center py-3">
-                <a href="#" class="pe-4 d-flex align-items-center">
-                  <span class="material-symbols-outlined text-dark">
-                    visibility
-                  </span>
-                </a>
-                <a href="#" class="d-flex align-items-center">
-                  <span class="material-symbols-outlined text-dark">
-                    edit
-                  </span>
-                </a>
+              <td class="py-3">
+                <div class="d-flex justify-content-end align-items-center">
+                  <a href="#" class="pe-4 d-flex align-items-center" data-bs-toggle="modal">
+                    <span class="material-symbols-outlined text-dark">
+                      visibility
+                    </span>
+                  </a>
+                  <a href="#" data-bs-toggle="modal" class="d-flex align-items-center" data-bs-whatever="Emir Wicks">
+                    <span class="material-symbols-outlined text-dark">
+                      edit
+                    </span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr>
@@ -199,17 +217,19 @@
               <td class="py-3">Sabrina Stephenson</td>
               <td class="py-3">sabrina.stephenson@mail.com</td>
               <td class="py-3">Yes</td>
-              <td class="d-flex align-items-center py-3">
-                <a href="#" class="pe-4 d-flex align-items-center">
-                  <span class="material-symbols-outlined text-dark">
-                    visibility
-                  </span>
-                </a>
-                <a href="#" class="d-flex align-items-center">
-                  <span class="material-symbols-outlined text-dark">
-                    edit
-                  </span>
-                </a>
+              <td class="py-3">
+                <div class="d-flex justify-content-end align-items-center">
+                  <a href="#" class="pe-4 d-flex align-items-center" data-bs-toggle="modal">
+                    <span class="material-symbols-outlined text-dark">
+                      visibility
+                    </span>
+                  </a>
+                  <a href="#" data-bs-toggle="modal" class="d-flex align-items-center" data-bs-whatever="Emir Wicks">
+                    <span class="material-symbols-outlined text-dark">
+                      edit
+                    </span>
+                  </a>
+                </div>
               </td>
             </tr>
             <tr>
@@ -217,21 +237,23 @@
               <td class="py-3">Annie Smith</td>
               <td class="py-3">annie.smith@mail.com</td>
               <td class="py-3">Yes</td>
-              <td class="d-flex align-items-center py-3">
-                <a href="#" class="pe-4 d-flex align-items-center">
-                  <span class="material-symbols-outlined text-dark">
-                    visibility
-                  </span>
-                </a>
-                <a href="#" class="d-flex align-items-center">
-                  <span class="material-symbols-outlined text-dark">
-                    edit
-                  </span>
-                </a>
+              <td class="py-3">
+                <div class="d-flex justify-content-end align-items-center">
+                  <a href="#" class="pe-4 d-flex align-items-center" data-bs-toggle="modal">
+                    <span class="material-symbols-outlined text-dark">
+                      visibility
+                    </span>
+                  </a>
+                  <a href="#" data-bs-toggle="modal" class="d-flex align-items-center" data-bs-whatever="Emir Wicks">
+                    <span class="material-symbols-outlined text-dark">
+                      edit
+                    </span>
+                  </a>
+                </div>
               </td>
             </tr>
             <%- include('./layout/emirWicks'); -%>
-            <%- include('./layout/edit'); -%>
+              <%- include('./layout/edit'); -%>
           </tbody>
         </table>
         <nav>
@@ -240,7 +262,7 @@
               <a class="page-link d-flex align-items-center ps-1 pe-1" href="#">
                 <span class="material-symbols-outlined">
                   chevron_left
-                  </span>
+                </span>
               </a>
             </li>
             <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -250,15 +272,15 @@
               <a class="page-link d-flex align-items-center ps-1 pe-1" href="#">
                 <span class="material-symbols-outlined">
                   navigate_next
-                  </span>
+                </span>
               </a>
             </li>
           </ul>
         </nav>
       </div>
-  </div>
-  </div>
-  </div>
-  <script type="module" src="../main.js"></script>
+    </div>
+
+    <script type="module" src="../main.js"></script>
 </body>
+
 </html>

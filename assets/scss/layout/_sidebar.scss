@@ -1,21 +1,15 @@
+.sidebar {
+  position: fixed;
+  min-width: 296px;
+  min-height: 100vh;
+}
+
 .nav-link {
-  padding: 12px 32px;
-  border-left: 4px solid #f8f9fa;
-}
-.nav-link-active:active,
-.nav-link:hover {
-  border-left: 4px solid #198754;
-}
-
-/* 問題 */
-
-/* 看了第三週助教講解嘗試使用偽元素，還是無法作用也不太懂原理(以下為程式碼) */
-/* 1 */
-/* .nav-link {
   padding: 12px 32px;
   position: relative;
 }
-.nav-link:active ::before {
+
+.nav-link.active::before {
   content: "";
   position: absolute;
   left: 0;
@@ -23,12 +17,8 @@
   height: 32px;
   border-left: 4px solid #198754;
 }
-.list-group-item:active {
+
+
+.list-group-item.active {
   border: 1px solid #dee2e6;
-} */
-/* 2 */
-/* 請問以下寫法請問無法排除第一列的logo的原因？而且也沒法讓border留在畫面上 */
-/* .nav-link:not(:first-child) :active,
-.nav-link:not(:first-child) :hover {
-  border-left: 4px solid #198754;
-} */
+}

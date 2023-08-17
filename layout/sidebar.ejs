@@ -1,67 +1,45 @@
-<div class="bg-light mh-100 py-6 d-flex flex-column justify-content-between">
+<div class="sidebar bg-light mh-100 py-6 d-flex flex-column justify-content-between">
   <!-- 問題 -->
   <ul class="nav flex-column fw-bold">
     <li class="nav-item mb-6">
-      <a class="nav-link nav-link-active p-0 ps-6" aria-current="page" href="#">
+      <a class="nav-link p-0 ps-6" aria-current="page" href="index.html">
         <img src="../assets/images/logo-ANSWER.svg" alt="logo" />
       </a>
     </li>
     <li class="nav-item">
-      <a
-        class="nav-link nav-link-active d-flex align-items-center"
-        aria-current="page"
-        href="#"
-      >
+      <a class="nav-link d-flex align-items-center" aria-current="page" href="#">
         <span class="material-symbols-outlined me-3"> insert_chart </span>
         Dashboard
       </a>
     </li>
     <li class="nav-item">
-      <a
-        class="nav-link nav-link-active d-flex align-items-center"
-        aria-current="page"
-        href="#"
-      >
+      <a class="nav-link d-flex align-items-center" aria-current="page" href="#">
         <span class="material-symbols-outlined me-3"> forum </span>
         Question
       </a>
     </li>
     <li class="nav-item">
-      <a
-        class="nav-link nav-link-active d-flex align-items-center"
-        aria-current="page"
-        href="index.html"
-      >
+      <a class="nav-link d-flex align-items-center <%= page === 'index' ? 'text-success active' : 'text-gray-900' %>"
+        aria-current="page" href="index.html">
         <span class="material-symbols-outlined me-3"> assignment </span>
         Assignment
       </a>
     </li>
     <li class="nav-item">
-      <a
-        class="nav-link nav-link-active d-flex align-items-center"
-        aria-current="page"
-        href="#"
-      >
+      <a class="nav-link d-flex align-items-center" aria-current="page" href="#">
         <span class="material-symbols-outlined me-3"> video_library </span>
         Course
       </a>
     </li>
     <li class="nav-item">
-      <a
-        class="nav-link nav-link-active d-flex align-items-center"
-        aria-current="page"
-        href="admin.html"
-      >
+      <a class="nav-link d-flex align-items-center <%= page === 'admain' ? 'text-success active' : 'text-gray-900' %>"
+        aria-current="page" href="admin.html">
         <span class="material-symbols-outlined me-3"> group </span>
         Admin
       </a>
     </li>
     <li class="nav-item">
-      <a
-        class="nav-link nav-link-active d-flex align-items-center"
-        aria-current="page"
-        href="#"
-      >
+      <a class="nav-link d-flex align-items-center" aria-current="page" href="#">
         <span class="material-symbols-outlined me-3"> settings </span>
         Settings
       </a>
@@ -70,15 +48,11 @@
   <!-- 問題 -->
   <div class="d-flex ms-6 align-items-center">
     <div class="flex-shrink-0">
-      <img
-        src="../assets/images/andychen.jpeg"
-        alt="andychen"
-        class="user rounded-circle"
-      />
+      <img src="../assets/images/andychen.jpeg" alt="andychen" class="user rounded-circle" />
     </div>
     <div class="flex-grow-1 ms-2">
       <p class="fw-bold mb-1">Andy Chen</p>
-      <a href="#" class="text-secondary pe-80">andy0401@mail.com</a>
+      <a href="#" class="text-secondary">andy0401@mail.com</a>
     </div>
   </div>
 </div>
