@@ -265,11 +265,33 @@
                     </div>
                   </div>
                   <div class="card-header bg-light border-top border-dark-subtle py-3 ps-25 d-flex">
-                    <a href="#" class="text-dark fw-bold d-flex align-items-center">Body Text
-                      <span class="material-symbols-outlined ms-2">
-                        arrow_drop_down
-                      </span>
-                    </a>
+                    <div class="dropdown">
+                      <a data-bs-toggle="collapse" role="button" href="#test3">
+                        <button href="#" data-bs-toggle="dropdown"
+                          class="text-dark fw-bold d-flex align-items-center border-0 bg-light">Body
+                          Text
+                          <span class="open">
+                            <span class="material-symbols-outlined ms-2 d-flex align-items-center">
+                              arrow_drop_down
+                            </span>
+                          </span>
+                          <span class="close">
+                            <span class="material-symbols-outlined ms-2 d-flex align-items-center">
+                              arrow_drop_up
+                            </span>
+                          </span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-start bdrs-2" id="test3">
+                          <li>
+                            <a class="dropdown-item" href="#">Action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                        </ul>
+                      </a>
+                    </div>
+
                     <a href="#" class="text-dark d-flex align-items-center ms-4">
                       <span class="material-symbols-outlined">
                         format_bold
